@@ -1,0 +1,12 @@
+module BreizMod
+{
+    imports
+    {
+        Base
+    }
+
+    item BreizhCola
+    {
+
+    }
+}
