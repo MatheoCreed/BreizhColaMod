@@ -5,7 +5,7 @@ function BreizMod.ApplyBreizColaEffect(player)
         return end
 
     -- Augmentation d'une stat :
-    player:getStats():setFatigue(player.getStats():getFatigue() - 0.15 )
+    player:getStats():setFatigue(player:getStats():getFatigue() - 0.15 )
     
     -- ajout d'un effet
     player:Say("Du Breizh Cola !!")
@@ -17,7 +17,7 @@ function BreizMod.ApplyBreizColaEffect(player)
 end
 
 function BreizMod.OnPlayerUpdate(player)
-    if not player:getModeData().BreizhSpeedBoost then 
+    if not player:getModData().BreizhSpeedBoost then 
         return end
     local modData = player:getModData()
     modData.BreizhTimer = modData.BreizhTimer - 1

@@ -2,3 +2,4 @@ name=Breizh Cola Mod
 id=breizhcola
 description=Ajoute une canette de Breizh Cola qui donne soif mais rend plus rapide.
 poster=poster.png
+modloader=lua
