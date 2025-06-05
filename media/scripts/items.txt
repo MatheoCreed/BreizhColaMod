@@ -7,6 +7,20 @@ module BreizMod
 
     item BreizhCola
     {
-
+        DisplayName=Breizh Cola,
+        Type=Food,
+        Icon=Pop,   // On met l'icon d'une canette ( déjà présente en jeu ) 
+        Weight=0.3,
+        ThirstChange=-10, 
+        HungerChange=0,
+        UnhappyChange=0,
+        Calories=0,
+        Carbohydrates=0,
+        Proteins=0,
+        Lipids=0,
+        IsCookable=FALSE,
+        IsAlcoholic=FALSE,
+        CustomEatSound=Pop,
+        OnEat = function(player, food) BreizMod.ApplyBreizhColaEffect(player); end,
     }
 }
